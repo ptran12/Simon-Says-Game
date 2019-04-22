@@ -12,3 +12,4 @@
 newSequence();
 console.log(gamePattern);
 
+// test git 
