@@ -17,7 +17,9 @@
  
 $(".btn").click(function(event){
   var userChosenColor = event.target.id
-  console.log(userChosenColor);
+  // console.log(userChosenColor);
+  userClickedPattern.push(userChosenColor);
+  console.log(userClickedPattern)
 });
 
 newSequence();
