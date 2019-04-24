@@ -80,3 +80,10 @@ function animatePress(currentColor) {
 }
 
 
+// Restart Game Fuction 
+
+function startOver(){
+  // level needs to restart 
+  // game pattern needs to restart 
+  // start varable
+}
