@@ -17,7 +17,7 @@ $(document).keypress(function() {
 
 $(".btn").click(function() {
 
-  var userChosenColour = $(this).attr("id");
+  var userChosenColour = event.target.id;
   userClickedPattern.push(userChosenColour);
 
   playSound(userChosenColour);
@@ -42,8 +42,12 @@ function checkAnswer(currentLevel) {
 
     } else {
 
-      console.log("wrong");
+      $("body").addClass("game-over");
+      setTimeout(function () {
+        $("#" + currentColor).removeClass("game-over");
+      }, 200);
 
+      $("#level-title").text("Game Over, Press Any Key to Restart");
     }
 
 }
